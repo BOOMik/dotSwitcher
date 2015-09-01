@@ -311,5 +311,10 @@ namespace dotSwitcher
             Process.Start("https://github.com/kurumpa/dotSwitcher/issues");
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+        }
+
     }
 }

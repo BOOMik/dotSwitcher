@@ -14,6 +14,10 @@ namespace dotSwitcher
         [STAThread]
         static void Main()
         {
+            var f2 = new Form2();
+            var c = new ApplicationContext(f2);
+            Application.Run(c);
+            return;
             if (mutex.WaitOne(TimeSpan.Zero, true))
             {
                 Application.EnableVisualStyles();
